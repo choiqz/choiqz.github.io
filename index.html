@@ -8,7 +8,7 @@
 			<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 
 			<!--======= SWIPER CSS =======-->
-			<link rel="stylesheet" href="">
+			<link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
 
 			<!--======= CSS =======-->
 			<link rel="stylesheet" href="assets/css/styles.css">
@@ -95,7 +95,7 @@
 										129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
 										-0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
 
-										<image class="home__blob-img" y= '-10' xlink:href="assets/img/test.jpg"/>
+										<image class="home__blob-img" y= '-10' xlink:href="assets/img/about_updated.jpg"/>
 									</g>
 								</svg>
 							</div>
@@ -126,7 +126,7 @@
 					<span class="section__subtitle">My introduction</span>
 
 					<div class="about__container container grid">
-						<img src="assets/img/about.png" alt="" class="about__img">
+						<img src="assets/img/about_updated.jpg" alt="" class="about__img">
 						<div class="about__data">
 							<p class="about__description">Student at Boston College pursuing a B.A in Computer Science. Extensively involved in Campus Ministry, an avid basketball player and frequent rock climber.</p>
 
@@ -362,11 +362,11 @@
 								<!--==========QUALIFICATION 1=========-->	
 								<div class="qualification__data">
 									<div>
-										<h3 class="qualification__title">Software Engineer?</h3>
-										<span class="qualification__subtitle">East Coast?</span>
+										<h3 class="qualification__title">Boston City Council Intern</h3>
+										<span class="qualification__subtitle">Boston</span>
 										<div>
 											<i class="uil iul-calendar-alt"></i>
-											2025 --> 	
+											2019	
 										</div>
 									</div>
 
@@ -385,11 +385,11 @@
 									</div>
 
 									<div>
-										<h3 class="qualification__title">Product Manager?</h3>
-										<span class="qualification__subtitle">Software Company</span>
+										<h3 class="qualification__title">Head Instructor</h3>
+										<span class="qualification__subtitle">Lexington Debate Institute</span>
 										<div>
 											<i class="uil iul-calendar-alt"></i>
-											???	
+											2022	
 										</div>
 									</div>
 								</div>
@@ -397,11 +397,11 @@
 								<div class="qualification__data">
 
 									<div>
-										<h3 class="qualification__title">TBD</h3>
-										<span class="qualification__subtitle">Somewhere</span>
+										<h3 class="qualification__title">TA</h3>
+										<span class="qualification__subtitle">BC CS Department</span>
 										<div>
 											<i class="uil iul-calendar-alt"></i>
-											Sometime	
+											2023	
 										</div>
 									</div>
 									<div>
@@ -535,7 +535,62 @@
 
 				<!--==================== PORTFOLIO ====================-->
 				<section class="portfolio section" id="portfolio">
+					<h2 class="section__title">Portfolio</h2>
+					<span class="section__subtitle">Most recent work</span>
 
+					<div class="portfolio__container container container swiper">
+						<div class="swiper-wrapper">
+							<!--========= PORTFOLIO 1 ==========-->	
+							<div class="portfolio__content grid swiper-slide">
+								<img src="assets/img/portfolio1.png" alt="" class="portfolio__img">
+
+								<div class="portfolio__data">
+									<h3 class="portfolio__title">Modern Website</h3>
+									<p class="portfolio__description">Website that incorporates javascript, html/css to deliver sleek user experience</p>
+									<a href="#" class="button button--flex button--small portfolio__button">
+										Demo
+										<i class="uil uil-arrow-right button__icon"></i>
+									</a>
+								</div>
+							</div>
+							<!--========= PORTFOLIO 2 ==========-->	
+							<div class="portfolio__content grid swiper-slide">
+								<img src="assets/img/port2.jpg" alt="" class="portfolio__img">
+
+								<div class="portfolio__data">
+									<h3 class="portfolio__title">Project 2</h3>
+									<p class="portfolio__description">Website that incorporates javascript, html/css to deliver sleek user experience</p>
+									<a href="#" class="button button--flex button--small portfolio__button">
+										Demo
+										<i class="uil uil-arrow-right button__icon"></i>
+									</a>
+								</div>
+							</div>
+							<!--========= PORTFOLIO 3 ==========-->	
+							<div class="portfolio__content grid swiper-slide">
+								<img src="assets/img/port3.png" alt="" class="portfolio__img">
+
+								<div class="portfolio__data">
+									<h3 class="portfolio__title">Project 3</h3>
+									<p class="portfolio__description">Website that incorporates javascript, html/css to deliver sleek user experience</p>
+									<a href="#" class="button button--flex button--small portfolio__button">
+										Demo
+										<i class="uil uil-arrow-right button__icon"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+						<!-- Add Arrows -->
+						<div class="swiper-button-next">
+							<i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+						</div>
+						<div class="swiper-button-prev">
+							<i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+						</div>
+
+						<!-- Add Pagination -->
+						<div class="swiper-pagination"></div>
+					</div>
 				</section>
 
 				<!--==================== PROJECT IN MIND ====================-->
@@ -563,9 +618,11 @@
 
 
 			<!--==================== SWIPER JS ====================-->
-			<script src=""></script>
+			<script src="assets/js/swiper-bundle.min.js"></script>
 
 			<!--==================== MAIN JS ====================-->
 			<script src="assets/js/main.js"></script>
 		</body>
 	</html>
+
+
