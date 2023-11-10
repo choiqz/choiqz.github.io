@@ -1,26 +1,17 @@
+
 import React from 'react';
-import logo from './logo.svg';
+import HomePage from './HomePage';
 import './App.css';
 
-function App() {
+const App: React.FC = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* Removed imagePath prop since it's no longer needed */}
+      <HomePage name="Jeong-Wan Choi" tagline="I'm Jeong-Wan, an aspiring software engineer" />
+      {/* Other components like Navbar, Footer, etc. */}
     </div>
   );
-}
+};
 
 export default App;
+
