@@ -1,41 +1,51 @@
 
 .homepage {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  background-color: #f8f8f8; /* Off-white background */
-  color: #333; /* Dark grey color for text */
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  padding: 50px; /* Add some padding around */
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	align-items: flex-start;/* Align items at the start of the cross axis */
+	flex-wrap: nowrap; /* Prevent wrapping of flex items */
+	background-color: #f8f8f8; /* Off-white background */
+	color: #333; /* Dark grey color for text */
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	padding: 50px; /* Add some padding around */
+}
+
+.left-section{
+	display: flex;
+	flex-direction: column;
+	margin-right: 20px;
+	align-items: center;
 }
 
 .profile-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 50px;
 }
 
 .profile-image {
-  width: 200px; /* Increase the width */
-  height: 200px; /* Increase the height while keeping the same scale */
-  border-radius: 50%; /* Circular border */
-  object-fit: cover; /* Cover the area, cropping if necessary */
-  margin-right: 50px; /* Add margin to separate from the intro section */
-  border: 4px solid #d1C1C1C; /* Beige border */
+	width: 250px; /* Increase the width */
+	height: 250px; /* Increase the height while keeping the same scale */
+	border-radius: 50%; /* Circular border */
+	object-fit: cover; /* Cover the area, cropping if necessary */
+	border: 4px solid #d1C1C1C; /* Beige border */
 }
 
 .intro-section {
-  max-width: 600px; /* Max width for the intro section */
-  font-size: 1.2em; /* Increase the font size for the intro text */
+	flex: 1;
+	max-width: 600px; /* Max width for the intro section */
+	font-size: 1.2em; /* Increase the font size for the intro text */
 }
 
 .intro-section h2 {
-  font-size: 2em; /* Larger text for the 'Hello!' header */
-  color: #d4b483; /* Beige color */
-  margin-bottom: 0.5em; /* Margin bottom for spacing */
+	font-size: 2em; /* Larger text for the 'Hello!' header */
+	color: #d4b483; /* Beige color */
+	margin-bottom: 0.5em; /* Margin bottom for spacing */
 }
 
 .social-icons {
@@ -52,4 +62,28 @@
 	margin: 0 10px;
 }
 
+.resume-section {
+	margin-top: 20px; 
+	text-align: center;
+}
 
+.resume-header {
+	color: #d4b483; /* Same color as your "Hello" header, adjust as needed */
+	font-size: 2em;
+}
+
+.resume-pdf {
+	width: 100%; 
+	height: 600px; 
+	border: none;
+}
+
+.resume-link {
+	text-decoration: none; /* gets rid of default underline*/
+	color: inherit;
+}
+
+.resume-link:hover {
+	text-decoration: underline;
+	text-decoration-color: #d4b483;
+}
