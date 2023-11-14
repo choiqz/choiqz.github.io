@@ -1,6 +1,6 @@
 
 import React from 'react';
-import './HomePageStyling.css';
+import './HomePage.css';
 
 interface HomePageProps {
   name: string;
@@ -16,6 +16,14 @@ const HomePage: React.FC<HomePageProps> = ({ name, tagline }) => {
       <div className="intro-section">
         <h2>Hello! 👋</h2>
         <p>{tagline}</p>
+		<div className="social-icons">
+          <a href="https://github.com/choiqz" target="_blank" rel="noopener noreferrer">
+			<img src={process.env.PUBLIC_URL + '/github.svg'} alt="GitHub" className="social-icon" />
+          </a>
+          <a href="https://linkedin.com/in/jeongwan-choi" target="_blank" rel="noopener noreferrer">
+			<img src={process.env.PUBLIC_URL + '/linkedin.svg'} alt="LinkedIn" className="social-icon" />
+          </a>
+        </div>
       </div>
     </div>
   );
