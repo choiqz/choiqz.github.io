@@ -10,13 +10,12 @@
 	background-color: #f8f8f8; /* Off-white background */
 	color: #333; /* Dark grey color for text */
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-	padding: 50px; /* Add some padding around */
+	padding: 100px; /* Add some padding around */
 }
 
 .left-section{
 	display: flex;
 	flex-direction: column;
-	margin-right: 20px;
 	align-items: center;
 }
 
@@ -25,7 +24,6 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	margin-bottom: 50px;
 }
 
 .profile-image {
@@ -40,6 +38,7 @@
 	flex: 1;
 	max-width: 600px; /* Max width for the intro section */
 	font-size: 1.2em; /* Increase the font size for the intro text */
+	padding-top: 10px;
 }
 
 .intro-section h2 {
@@ -62,28 +61,37 @@
 	margin: 0 10px;
 }
 
-.resume-section {
-	margin-top: 20px; 
-	text-align: center;
+.wave-emoji:hover {
+    animation-name: wave-animation;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    transform-origin: 70% 70%;
+    display: inline-block;
 }
 
-.resume-header {
-	color: #d4b483; /* Same color as your "Hello" header, adjust as needed */
-	font-size: 2em;
-}
-
-.resume-pdf {
-	width: 100%; 
-	height: 600px; 
-	border: none;
-}
-
-.resume-link {
-	text-decoration: none; /* gets rid of default underline*/
-	color: inherit;
-}
-
-.resume-link:hover {
-	text-decoration: underline;
-	text-decoration-color: #d4b483;
+@keyframes wave-animation {
+    0% {
+        transform: rotate( 0.0deg)
+    }
+    10% {
+        transform: rotate(14.0deg)
+    }
+    20% {
+        transform: rotate(-8.0deg)
+    }
+    30% {
+        transform: rotate(14.0deg)
+    }
+    40% {
+        transform: rotate(-4.0deg)
+    }
+    50% {
+        transform: rotate(10.0deg)
+    }
+    60% {
+        transform: rotate( 0.0deg)
+    }
+    100% {
+        transform: rotate( 0.0deg)
+    }
 }
