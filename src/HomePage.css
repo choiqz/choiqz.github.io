@@ -24,7 +24,9 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	padding-left: 100px;
 }
+
 
 .profile-image {
 	width: 250px; /* Increase the width */
@@ -95,3 +97,24 @@
         transform: rotate( 0.0deg)
     }
 }
+
+.cs-major-link {
+	text-decoration: none; /* Removes the default underline */
+	color: inherit; /* Optional: ensures the link color matches the surrounding text */
+	cursor: pointer; /* Changes the cursor to indicate it's clickable */
+
+	background: linear-gradient(to right, #d4b483 50%, transparent 50%, transparent);
+	background-size: 200% 100%;
+	background-position: 100% 0;
+	transition: background-position 0.5s ease;
+
+	display: inline-block;
+	line-height: 0.1;
+	padding-bottom: .6em;
+
+}
+
+.cs-major-link:hover {
+	background-position: 0 0;
+}
+

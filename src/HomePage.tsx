@@ -9,6 +9,8 @@ interface HomePageProps {
 }
 
 const HomePage: React.FC<HomePageProps> = ({ name, tagline }) => {
+
+	const parts = tagline.split("CS major @ Boston College")
   return (
     <div className="homepage">
 		  <div className="profile-section">
@@ -17,7 +19,16 @@ const HomePage: React.FC<HomePageProps> = ({ name, tagline }) => {
 
 	  <div className="intro-section">
 	  <h2>Hello! <span className="wave-emoji">👋</span></h2>
-        <p>{tagline}</p>
+		<p>
+		  {parts[0]}
+          <a href="https://github.com/choiqz/resume/blob/master/Jeong-Wan_Choi_Resume.pdf"
+             target="_blank"
+             rel="noopener noreferrer"
+             className="cs-major-link">
+            CS major @ Boston College
+          </a>
+		  {parts[1]}
+        </p>
 		<div className="social-icons">
           <a href="https://github.com/choiqz" target="_blank" rel="noopener noreferrer">
 			<img src={process.env.PUBLIC_URL + '/github.svg'} alt="GitHub" className="social-icon" />
