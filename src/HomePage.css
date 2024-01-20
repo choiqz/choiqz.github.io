@@ -109,8 +109,8 @@
 	transition: background-position 0.5s ease;
 
 	display: inline-block;
-	line-height: 0.1;
-	padding-bottom: .6em;
+	line-height: 0.02;
+	padding-bottom: .7em;
 
 }
 
