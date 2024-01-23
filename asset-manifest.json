@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/choiqz.github.io/static/css/main.e0370fd2.css",
+    "main.js": "/choiqz.github.io/static/js/main.d1ca2d55.js",
+    "static/js/787.0f15b36d.chunk.js": "/choiqz.github.io/static/js/787.0f15b36d.chunk.js",
+    "index.html": "/choiqz.github.io/index.html",
+    "main.e0370fd2.css.map": "/choiqz.github.io/static/css/main.e0370fd2.css.map",
+    "main.d1ca2d55.js.map": "/choiqz.github.io/static/js/main.d1ca2d55.js.map",
+    "787.0f15b36d.chunk.js.map": "/choiqz.github.io/static/js/787.0f15b36d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e0370fd2.css",
+    "static/js/main.d1ca2d55.js"
+  ]
+}
